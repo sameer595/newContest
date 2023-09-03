@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>August Month Module Test</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <!-- navbar  -->
+    <nav class="navbar sticky-nav navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <div class="logomain">
+                <svg xmlns="http://www.w3.org/2000/svg" width="38" height="39" viewBox="0 0 38 39" fill="none">
+                    <path
+                        d="M18.6434 17.2444L12.5344 11.1249C12.4722 11.0627 12.3715 11.0627 12.3094 11.1249L1.19988 22.2536C1.13775 22.3158 1.13776 22.4167 1.19988 22.4789L7.3089 28.5985C7.37102 28.6607 7.47174 28.6607 7.53386 28.5985L18.6434 17.4698C18.7055 17.4076 18.7055 17.3067 18.6434 17.2444Z"
+                        fill="#2F80ED" />
+                    <path
+                        d="M30.7159 28.5673L36.7627 22.5101C36.842 22.4306 36.842 22.3018 36.7627 22.2224L25.7154 11.156C25.6361 11.0766 25.5075 11.0766 25.4282 11.156L19.3814 17.2133C19.3021 17.2927 19.3021 17.4215 19.3814 17.5009L30.4287 28.5673C30.508 28.6467 30.6365 28.6467 30.7159 28.5673Z"
+                        fill="#2F80ED" />
+                    <path
+                        d="M25.0576 28.1774L19.0913 22.2008C19.0409 22.1503 18.9591 22.1503 18.9087 22.2008L12.9424 28.1774C12.892 28.2279 12.892 28.3098 12.9424 28.3603L18.9087 34.3368C18.9591 34.3874 19.0409 34.3874 19.0913 34.3368L25.0576 28.3603C25.108 28.3098 25.108 28.2279 25.0576 28.1774Z"
+                        fill="#012555" />
+                    <path
+                        d="M25.0576 10.6745L19.0913 4.6979C19.0409 4.64739 18.9591 4.64739 18.9087 4.6979L12.9424 10.6745C12.892 10.725 12.892 10.8069 12.9424 10.8574L18.9087 16.8339C18.9591 16.8844 19.0409 16.8844 19.0913 16.8339L25.0576 10.8574C25.108 10.8069 25.108 10.725 25.0576 10.6745Z"
+                        fill="#012555" />
+                </svg>
+                <img src="./AccioJob.png" alt="acciologo">
+                <img src="./NSDC_Logo_in_clear_background 1.png" alt="next logo">
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                <ul class="navbar-nav  mb-2 mb-lg-0 d-flex mx-5 ">
+                    <li class="nav-item d-flex align-item-center">
+                        <a class="nav-link active" aria-current="page" href="#">
+                            <img src="./Courses.png" alt="">
+                        </a>
+                        <svg class="http://www.w3.org/2000/svg " width="19" height="19" viewBox="0 0 19 19" fill="none">
+                            <g clip-path="url(#clip0_86_910)">
+                                <path
+                                    d="M9.98115 10.379L13.6937 6.6665L14.7542 7.727L9.98115 12.5L5.20815 7.727L6.26865 6.6665L9.98115 10.379Z"
+                                    fill="#4F4F4F" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_86_910">
+                                    <rect width="18" height="18" fill="white"
+                                        transform="matrix(0 1 -1 0 18.9807 0.5)" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <img src="./AccioJob Reviews.png" alt="">
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <img src="./Scholarship Test.png" alt="">
+                        </a>
+                        <!-- <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><hr class="dropdown-divider"></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul> -->
+                    </li>
+                    <li class="nav-item d-flex">
+                        <a class="nav-link disabled" aria-disabled="true"><img src="./More.png"
+                                class="disabled-1"></a>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19" fill="none">
+                            <g clip-path="url(#clip0_86_921)">
+                                <path
+                                    d="M9.98115 10.379L13.6937 6.6665L14.7542 7.727L9.98115 12.5L5.20815 7.727L6.26865 6.6665L9.98115 10.379Z"
+                                    fill="#4F4F4F" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_86_921">
+                                    <rect width="18" height="18" fill="white"
+                                        transform="matrix(0 1 -1 0 18.9807 0.5)" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </li>
+                </ul>
+                <form class="d-flex collapse " role="search">
+                    <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"> -->
+                    <button class="btn btn-outline-success" type="submit">Login</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- blue  bar  -->
+    <div class="blue-bar">
+        Next batch starts in ⌛ 22 Days, Hurry! ️
+    </div>
+    <!-- hero section  -->
+    <div class="hero d-flex my-5">
+        <div class="hero-left d-flex flex-column">
+            <div class="main-head d-flex flex-column">
+                <div class="line-1">Launch your career with our</div>
+                <div class="line-2">Full Stack Developer <span>Courses</span></div>
+            </div>
+            <div class="small-para">
+                <p>Curriculum designed and taught by Alumni from IIT’s & Leading Tech Companies.</p>
+            </div>
+            <div class="feature d-flex">
+                <img src="./Features.png" alt="">
+            </div>
+
+            <div class="small-heading">
+                <p>Made with 💙 by an AccioJob Student</p>
+            </div>
+        </div>
+
+
+
+
+        <div class="hero-right d-flex">
+            <div class="frame d-flex flex-column">
+                <h2 class="frame-heading">
+                    Start Attending Live Classes for Free!
+                </h2>
+                <p>
+                    Live lectures & Assignments curated by Top Tech Proffesionals
+                </p>
+                <form class=" form">
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="basic-addon1">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20"
+                                fill="none">
+                                <g clip-path="url(#clip0_101_158)">
+                                    <path
+                                        d="M10.5 14.1667C13.5517 14.1667 16.2208 15.4792 17.6725 17.4376L16.1375 18.1634C14.9558 16.7634 12.8725 15.8334 10.5 15.8334C8.12751 15.8334 6.04417 16.7634 4.86251 18.1634L3.32834 17.4367C4.78001 15.4784 7.44834 14.1667 10.5 14.1667ZM10.5 1.66675C11.6051 1.66675 12.6649 2.10573 13.4463 2.88714C14.2277 3.66854 14.6667 4.72835 14.6667 5.83341V8.33341C14.6666 9.40713 14.2521 10.4394 13.5095 11.2149C12.7669 11.9904 11.7535 12.4493 10.6808 12.4959L10.5 12.5001C9.39494 12.5001 8.33513 12.0611 7.55373 11.2797C6.77233 10.4983 6.33334 9.43848 6.33334 8.33341V5.83341C6.3334 4.7597 6.74796 3.72745 7.49055 2.95193C8.23315 2.17642 9.24646 1.71751 10.3192 1.67091L10.5 1.66675ZM10.5 3.33341C9.86233 3.33338 9.24874 3.57702 8.78479 4.01448C8.32083 4.45195 8.04158 5.05017 8.00417 5.68675L8.00001 5.83341V8.33341C7.99938 8.98417 8.25252 9.60952 8.70565 10.0766C9.15877 10.5437 9.77617 10.8157 10.4266 10.8347C11.0771 10.8538 11.7094 10.6186 12.1891 10.1789C12.6689 9.73918 12.9583 9.12975 12.9958 8.48008L13 8.33341V5.83341C13 5.17037 12.7366 4.53449 12.2678 4.06565C11.7989 3.59681 11.163 3.33341 10.5 3.33341Z"
+                                        fill="#8393A9" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_101_158">
+                                        <rect width="20" height="20" fill="white" transform="translate(0.5)" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </span>
+                        <input type="text" class="form-control" placeholder="Sameer Gaikwad" aria-label="Username"
+                            aria-describedby="basic-addon1">
+                    </div>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="basic-addon1">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20"
+                                fill="none">
+                                <g clip-path="url(#clip0_101_163)">
+                                    <path
+                                        d="M8.305 8.90167C9.08695 10.2754 10.2246 11.4131 11.5983 12.195L12.335 11.1633C12.4535 10.9974 12.6286 10.8807 12.8273 10.8353C13.026 10.7898 13.2345 10.8188 13.4133 10.9167C14.5919 11.5608 15.8935 11.9481 17.2325 12.0533C17.4415 12.0699 17.6365 12.1646 17.7788 12.3186C17.921 12.4726 18 12.6745 18 12.8842V16.6025C18 16.8088 17.9235 17.0078 17.7853 17.161C17.6471 17.3142 17.4569 17.4106 17.2517 17.4317C16.81 17.4775 16.365 17.5 15.9167 17.5C8.78333 17.5 3 11.7167 3 4.58333C3 4.135 3.0225 3.69 3.06833 3.24833C3.08938 3.04308 3.18582 2.85293 3.33899 2.71469C3.49216 2.57646 3.69117 2.49996 3.8975 2.5H7.61583C7.82547 2.49997 8.02741 2.57896 8.1814 2.72121C8.33539 2.86346 8.43011 3.05852 8.44667 3.2675C8.55185 4.60649 8.93923 5.90807 9.58333 7.08667C9.68122 7.26547 9.71018 7.47395 9.66472 7.67266C9.61927 7.87137 9.50255 8.04654 9.33667 8.165L8.305 8.90167ZM6.20333 8.35417L7.78667 7.22333C7.33732 6.25341 7.02946 5.22403 6.8725 4.16667H4.675C4.67 4.305 4.6675 4.44417 4.6675 4.58333C4.66667 10.7967 9.70333 15.8333 15.9167 15.8333C16.0558 15.8333 16.195 15.8308 16.3333 15.825V13.6275C15.276 13.4705 14.2466 13.1627 13.2767 12.7133L12.1458 14.2967C11.6906 14.1198 11.2483 13.9109 10.8225 13.6717L10.7742 13.6442C9.13965 12.7139 7.78607 11.3604 6.85583 9.72583L6.82833 9.6775C6.58909 9.25166 6.38024 8.80945 6.20333 8.35417Z"
+                                        fill="#8393A9" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_101_163">
+                                        <rect width="20" height="20" fill="white" transform="translate(0.5)" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </span>
+                        <input type="text" class="form-control" placeholder="Mobile number" aria-label="Username"
+                            aria-describedby="basic-addon1">
+                    </div>
+                    <div class="d-grid gap-2">
+                        <button class="btn btn-primary m-0" type="button">Apply Now For Free ></button>
+                    </div>
+                </form>
+
+                <div class="last">
+                    <p>
+                        By clicking ‘Apply now’, you agree to our Terms & Conditions
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <!-- our courses  -->
+    <div class="courses">
+        <div class="course-heading">
+            <h5>learn full-stack web development</h5>
+            <h3>OUR COURSES</h3>
+        </div>
+        <div class="course-2 d-flex justify-content-center">
+            <img src="./Sapling Card.png" class="d-flex" alt="">
+            <img src="./courese-2.png" class="d-flex" alt="">
+        </div>
+
+
+    </div>
+    <!-- partner heading  -->
+
+    <div class="partner d-flex flex-column">
+        <h6>Over 300+ hiring partners</h6>
+
+        <p class="hd">Top Startups & MNC’s Hire <br><span>Software Engineer</span></p>
+        <p class="hd-2">From AccioJob upto 41 Lakhs</p>
+    </div>
+
+    <div class="company d-flex flex-column justify-content-center">
+        <div class="all-company d-flex flex-row flex-wrap justify-content-evenly ">
+            <img src="./amz.png" alt="">
+            <img src="./bharatpe.png" alt="">
+            <img src="./makeytrip.png" alt="">
+            <img src="./wallmart.png" alt="">
+            <img src="./mearsk.png" alt="">
+            <img src="./paytm.png" alt="">
+
+
+            <img src="./paytm.png" alt="">
+            <img src="./mearsk.png" alt="">
+            <img src="./minirange.png" alt="">
+            <img src="./thoughtworkers.png" alt="">
+            <img src="./bharatpe.png" alt="">
+            <img src="./publicies.png" alt="">
+
+
+            <img src="./hsbc.png" alt="">
+            <img src="./converge.png" alt="">
+            <img src="./freecharge.png" alt="">
+            <img src="./park.png" alt="">
+            <img src="./payglobal.png" alt="">
+            <img src="./mystify.png" alt="">
+
+        </div>
+
+
+        <!-- <img src="./Images All/Companies Logo.png" alt=""> -->
+        <button type="button" class="btn btn-primary btn-primary-1">Placement Report ></button>
+    </div>
+
+
+    <!-- wall of love  -->
+    <div class="accio-wall">
+        <p>AccioJob Wall Of Love</p>
+        <h6 class="">Our Alumni Say it Best</h6>
+    </div>
+
+    <!-- last part -->
+    <div class="last-part my-5">
+        <div class="line-1st d-flex justify-content-center ">
+
+            <div>
+                <div class="card-1  d-flex flex-column shadow-lg rounded p-4">
+                    <div class="name my-2 d-flex">
+                        <img src="./virat kohli.png" alt="">
+                        <p>Virat Kohli</p>
+                        <img src="./LinkedIN.png " class="link-din" alt="">
+                    </div>
+                    <div class="edu my-2">SDE-II at Indian Cricket Board</div>
+
+                    <p class="my-2">My Life changed when I became a part of the AccioJob family. Before that I was not
+                        able
+                        to score any
+                        centuries. As centuries. As soon as I joined Accio, I hit a century against Afganistansoon as I
+                        joined Accio, I hit a century against Afganistan.centuries. As soon as I joined Accio, I hit a
+                        century against Afganistan</p>
+                    <div class="date">Jun 14, 2023</div>
+
+                </div>
+
+
+                <div class="card-1 d-flex flex-column shadow-lg rounded p-4">
+                    <div class="name my-2 d-flex">
+                        <img src="./rohit.png" alt="">
+                        <p>R. Sharma</p>
+                        <img src="./LinkedIN.png " class="link-din" alt="">
+                    </div>
+                    <div class="edu my-2">SDE-II at Indian Cricket Board</div>
+
+                    <p class="my-2">My Life changed when I became a part of the AccioJob family. Before that I was not
+                        able
+                        to score any Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, ducimus.
+                        centuries. centuries. As soon as I joined Accio, I hit a century against AfganistanAs soon as I
+                        joined Accio, I hit a century against Afganistan.</p>
+                    <div class="date">Jun 14, 2023</div>
+
+                </div>
+
+
+
+            </div>
+
+
+            <div>
+
+                <div class="card-1 d-flex flex-column shadow-lg rounded p-4">
+                    <div class="name my-2 d-flex">
+                        <img src="./Virendra S..png" alt="">
+                        <p>V. Sehwag</p>
+                        <img src="./LinkedIN.png " class="link-din" alt="">
+                    </div>
+                    <div class="edu my-2">SDE-II at Indian Cricket Board</div>
+
+                    <p class="my-2">My Life changed when I became a part of the AccioJob family. Before that I was not
+                        able
+                        to score any
+                        centuries. As soon as I joined Accio, I hit a century against Afganistan.</p>
+                    <div class="date">Jun 14, 2023</div>
+
+                </div>
+
+
+                <div class="card-1 d-flex flex-column shadow-lg rounded p-4">
+                    <div class="name my-2 d-flex">
+                        <img src="./dhoni.png" alt="">
+                        <p>MS Dhoni</p>
+                        <img src="./LinkedIN.png " class="link-din" alt="">
+                    </div>
+                    <div class="edu my-2">SDE-II at Indian Cricket Board</div>
+
+                    <p class="my-2">My Life changed when I became a part of the AccioJob family. Before that I was not
+                        able
+                        to score any Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, ducimus.
+                        centuries. I joined Accio, I hit a century against Afganistansoon as I joined Accio, I hit a
+                        century against Afganistan.centuries. As soon as I joined Accio, I hit a century against
+                        AfganistanI joined Accio, I hit a century against Afganistansoon as I joined Accio, I hit a
+                        century against Afganistan.centuries. As soon as I joined Accio, I hit a century against
+                        AfganistanAs soon as I joined Accio, I hit a century against Afganistan.</p>
+                    <div class="date">Jun 14, 2023</div>
+
+                </div>
+
+
+
+            </div>
+
+
+            <div>
+
+                <div class="card-1 d-flex flex-column shadow-lg rounded p-4">
+                    <div class="name my-2 d-flex">
+                        <img src="./rohit.png" alt="">
+                        <p>S. Ganguly</p>
+                        <img src="./LinkedIN.png " class="link-din" alt="">
+                    </div>
+                    <div class="edu my-2">SDE-II at Indian Cricket Board</div>
+
+                    <p class="my-2">My Life changed when I became a part of the AccioJob family. Before that I was not
+                        able
+                        to score any
+                        centuries. As soon as I joined Accio, I hit a century against Afganistan.I joined Accio, I hit a
+                        century against Afganistansoon as I joined Accio, I hit a century against Afganistan.centuries.
+                        As soon as I joined Accio, I hit a century against Afganistan</p>
+                    <div class="date">Jun 14, 2023</div>
+
+                </div>
+
+
+                <div class="card-1 d-flex flex-column shadow-lg rounded p-4">
+                    <div class="name my-2 d-flex">
+                        <img src="./dhoni.png" alt="">
+                        <p>A. Rahane</p>
+                        <img src="./LinkedIN.png " class="link-din" alt="">
+                    </div>
+                    <div class="edu my-2">SDE-II at Indian Cricket Board</div>
+
+                    <p class="my-2">My Life changed when I became a part of the AccioJob family. Before that I was not
+                        able
+                        to score any Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, ducimus.
+                        centuries. I joined Accio, I hit a century against Afganistansoon as I joined Accio, I hit a
+                        century against Afganistan.centuries. As soon as I joined Accio, I hit a century against
+                        AfganistanAs soon as I joined Accio, I hit a century against Afganistan.</p>
+                    <div class="date">Jun 14, 2023</div>
+
+                </div>
+
+
+
+            </div>
+
+
+
+
+
+        </div>
+    </div>
+
+
+
+
+
+    <!-- java scrip link  -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
